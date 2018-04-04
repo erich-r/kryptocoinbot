@@ -15,16 +15,16 @@ if($msg == "/start")
 switch($msg)
 {
 case "lan_english":
-      sm($chatID, "Home", $menu, 'Markdown', false, false, true);
+      sm($chatID, "Home", $menuENG, 'Markdown', false, false, true);
       break;
 case "lan_italian":
-      sm($chatID, "Home", $menu, 'Markdown', false, false, true);
+      sm($chatID, "Home", $menuITA, 'Markdown', false, false, true);
       break;
 case "lan_spanish":
-      sm($chatID, "Home", $menu, 'Markdown', false, false, true);
+      sm($chatID, "Home", $menuSPA, 'Markdown', false, false, true);
       break;
 case "lan_french":
-      sm($chatID, "Home", $menu, 'Markdown', false, false, true);
+      sm($chatID, "Home", $menuFRA, 'Markdown', false, false, true);
       break;
 case "lan_russian":
       sm($chatID, "Home", $menu, 'Markdown', false, false, true);
@@ -34,11 +34,11 @@ case "lan_arabic":
       break;
 }
 
-//Avvio delle impostazioni del bot 
+//Avvio delle impostazioni del bot
 
 if($msg == "/settings"){
-      
-      sm($chatID, "l", $buttons, 'Markdown', false, false, true);      
+
+      sm($chatID, "l", $buttons, 'Markdown', false, false, true);
 }
 
 if($msg == "/statistics"){
@@ -46,8 +46,3 @@ if($msg == "/statistics"){
 	require("statsCoin.php");
 
 }
-
-
-
-
-
